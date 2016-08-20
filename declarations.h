@@ -10,14 +10,14 @@ typedef struct move
 #endif
 
 
-int nextMove(int **matrix, int vr, int kol,int dim, int *vrNext, int *kolNext, int key);
+int nextMove(int **matrix, int row, int column, int dim, int *rowNext, int *columnNext, int key);
 
-int knightsTour(int **matrix, int vr, int kol, int dim, int brojac);
+int knightsTour(int **matrix, int row, int column, int dim, int counter);
 
 void printMatrix(int ** matrix, int dim);
 
 void sortMoves(move_t* moves, int num);
 
-int countMoves(int **matrix, int vr, int kol, int dim);
+int countMoves(int **matrix, int row, int column, int dim);
 
 
